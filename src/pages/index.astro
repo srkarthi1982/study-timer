@@ -1,23 +1,92 @@
 ---
 import AppShell from "../layouts/AppShell.astro";
 import { AvContainer, AvButton } from "@ansiversa/components";
+
+const title = "Study Timer – Ansiversa";
+const description = "Focus using Pomodoro-style timers.";
 ---
 
-<AppShell title="Study Timer" description="Study Timer – powered by Ansiversa.">
-    <!-- Hero -->
+<AppShell title={title} description={description}>
+  <!-- Hero -->
   <section class="av-hero">
     <AvContainer size="narrow" className="av-hero__content--narrow">
       <div class="av-hero__content">
         <div class="av-kicker">
-          <span>Ansiversa Ecosystem</span>
+          <span>Learning · Ansiversa Mini App</span>
         </div>
         <h1 class="av-gradient-text">Study Timer</h1>
         <p>
-          This project uses the shared @ansiversa/components package and global design system. Use this starter as a base for your next mini-app in the Ansiversa universe.
+          Focus using Pomodoro-style timers.
         </p>
       </div>
       <div class="av-cta-row">
-        <AvButton href="https://www.ansiversa.com">Visit Ansiversa</AvButton>
+        <AvButton href="https://study-timer.ansiversa.com">Launch Study</AvButton>
+      </div>
+    </AvContainer>
+  </section>
+
+  <!-- Problem -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">The problem it solves</h2>
+        <p class="av-section-lead">
+          Learning tools are scattered across tabs, apps, and messy notes.
+        </p>
+      </div>
+      <div class="av-section-body space-y-3 text-slate-300">
+        <p>Study Timer focuses on one part of your learning flow and keeps it clear.</p>
+      </div>
+    </AvContainer>
+  </section>
+
+  <!-- Why this mini app -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">Why Study Timer feels different</h2>
+        <p class="av-section-lead">
+          A focused mini app inside the larger Ansiversa ecosystem.
+        </p>
+      </div>
+      <div class="av-section-body">
+        <ul class="space-y-2 text-slate-300 list-disc list-inside">
+          <li>Designed specifically for learners, students, and educators.</li>
+          <li>Removes distractions so you can focus on actual understanding.</li>
+          <li>Built on the fast, unified Ansiversa ecosystem.</li>
+        </ul>
+      </div>
+    </AvContainer>
+  </section>
+
+  <!-- How it works -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">How it works</h2>
+        <p class="av-section-lead">
+          Simple, clear steps so people can start in under a minute.
+        </p>
+      </div>
+      <ol class="av-section-body space-y-2 text-slate-300 list-decimal list-inside">
+        <li>Open Study Timer in your browser.</li>
+        <li>Add the topic, content, or material you want to work with.</li>
+        <li>Use the focused tools to learn, revise, or practice within minutes.</li>
+      </ol>
+    </AvContainer>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">Ready to try Study Timer?</h2>
+        <p class="av-section-lead">
+          Open the app, follow the simple flow, and let it handle the heavy lifting.
+        </p>
+      </div>
+      <div class="av-cta-row">
+        <AvButton href="https://study-timer.ansiversa.com">Start with Study</AvButton>
       </div>
     </AvContainer>
   </section>
