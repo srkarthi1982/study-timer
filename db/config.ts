@@ -1,6 +1,14 @@
-import { defineDb } from 'astro:db';
+import { defineDb } from "astro:db";
+import {
+  TimerPresets,
+  FocusSessions,
+  FocusIntervals,
+} from "./tables";
 
-// https://astro.build/db/config
 export default defineDb({
-  tables: {}
+  tables: {
+    TimerPresets,
+    FocusSessions,
+    FocusIntervals,
+  },
 });
